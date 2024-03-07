@@ -39,7 +39,7 @@ Selain karakteristik mobil, penentuan harga juga menjadi penting. Jika perusahaa
   - Wawasan yang diperoleh dari analisis ini dapat membantu tim riset dan pengembangan Webuy Used Cars dalam membuat keputusan berbasis data, memfasilitasi transaksi yang lebih terinformasi di pasar mobil bekas Inggris Raya.
   - Penjual mobil mendapatkan kemudahan untuk menentukan harga mobil bekas yang sesuai dengan harga pasar mobil bekas di Inggris Raya Jika menggunakan jasa Webuyusedcar.
  
-  ### **Metric Evaluation**
+### **Metric Evaluation**
 
 Untuk megetahui performa suatu model memprediksi targetnya maka kita membutuhkan metric evaluation dengan mengukur nilai errornya. Pada percobaan ini kita menggunakan beberapa metric evaluation diantaranya:
 
