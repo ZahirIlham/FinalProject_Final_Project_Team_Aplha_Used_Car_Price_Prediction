@@ -24,19 +24,20 @@ Selain karakteristik mobil, penentuan harga juga menjadi penting. Jika perusahaa
     - Tidak memahami karakteristik mobil bekas di Inggris Raya akan menimbulkan tantangan bahkan kesalahan strategi bagi perusahaan dalam melakukan ekspansi itu sendiri.
     - Untuk memperoleh estimasi harga, penjual harus menunggu tim Webuy Used Cars memeriksa informasi yang telah diisi mengenai mobil yang hendak dijual. Proses ini memakan waktu dan menambah beban kerja, sehingga kurang efisien.
 
- ### **Goals**
+### **Goals**
 
 - Apa tujuan dan target dari penyelesaian masalah?
      - Mengembangkan model prediktif dengan metric evaluation MAPE kurang dari 12% untuk memastikan akurasi tinggi dalam memprediksi harga mobil bekas. Hal ini berdasarkan [percobaan lain yang memprediksi harga mobil bekas di India yang berhasil menghasilkan MAPE <12%](https://www.atlantis-press.com/article/125971556.pdf).
-    - Identifikasi dan analisis faktor-faktor signifikan yang memengaruhi keputusan pembelian mobil bekas, dengan fokus pada segment harga mobil, sehingga memberikan wawasan yang actionable bagi para stakeholder.
+    - Mengidentifikasi karakteristik mobil bekas di Inggris Raya, berdasarkan kategori harga, sehingga memberikan wawasan yang actionable bagi para stakeholder.
  
-  ### **Analytic Approach**
+### **Analytic Approach**
 
 - Apa rancangan solusi yang anda tawarkan untuk menyelesaikan masalah dari stakeholder?
     - Pendekatan analitis dimulai dengan Exploratory Data Analysis (EDA) menyeluruh untuk mendapatkan pemahaman mendalam tentang dataset. Selain itu, penjelasan rinci tentang teknik regresi itu sendiri. Pemodelan juga akan melibatkan validasi silang dan penyesuaian hiperparameter untuk memastikan kekokohan dan generalisasi model.
 
 - Kapan dan bagaimana stakeholder akan memanfaatkan atau menggunakan solusi tersebut?
-  - Wawasan yang diperoleh dari analisis ini dapat membantu tim riset dan pengembangan Webuy Used Cars dalam membuat keputusan berbasis data, memfasilitasi transaksi yang lebih terinformasi dan menguntungkan di pasar mobil bekas Inggris Raya.
+  - Wawasan yang diperoleh dari analisis ini dapat membantu tim riset dan pengembangan Webuy Used Cars dalam membuat keputusan berbasis data, memfasilitasi transaksi yang lebih terinformasi di pasar mobil bekas Inggris Raya.
+  - Penjual mobil mendapatkan kemudahan untuk menentukan harga mobil bekas yang sesuai dengan harga pasar mobil bekas di Inggris Raya Jika menggunakan jasa Webuyusedcar.
  
   ### **Metric Evaluation**
 
@@ -130,6 +131,23 @@ Tahapan preprocessing yang dilakukan sebelum modeling
     - Standard: Memberikan efisiensi bahan bakar baik hingga cukup baik, menawarkan berbagai pilihan untuk konsumen.
     - Premium: Menawarkan efisiensi bahan bakar yang lebih rendah, fokus pada performa dan kemewahan.
 
+## **Conclussion and Recommendation**
+
+### **Conclusion**
+
+**Karakteristik Mobil Berdasarkan Segment Harga:**
+
+1. **Kategori Budget**: 
+    Kategori Budget mencakup mobil produksi lama (4 tahun) yang berukuran kecil, memiliki mesin bertenaga kecil hingga menengah, bertransmisi manual, dan memiliki efisiensi bahan bakar yang sangat baik, membuat kendaraan pada kategori ini sangat cocok untuk kebutuhan transportasi perkotaan.
+
+2. **Kategori Standard**: 
+    Kategori Standard mencakup mobil-mobil dengan variasi yang beragam, dengan perpaduan karakteristik kendaraan dari kategori Budget dan Standar, membuat kendaraan pada kategori ini dapat memenuhi preferensi dan kebutuhan yang berbeda-beda.
+
+3. **Kategori Premium**: 
+    Kategori Premium mencakup mobil produksi baru (1 tahun) yang berukuran besar, memiliki mesin bertenaga menegah hingga besar, bertransmisi modern seperti semi-auto dan automatic, dan memiliki efisiensi bahan bakar yang cukup.
+    
+Dengan karakteristik tersebut, stakeholder mendapatkan gambaran mengenai mobil bekas di Inggris Raya berdasarkan kategori harga dari data listing mobil bekas di sana.
+
 
 <br>
 
@@ -139,15 +157,12 @@ Tahapan preprocessing yang dilakukan sebelum modeling
    Penggunaan Mean Absolute Percentage Error (MAPE) memungkinkan interpretasi kesalahan prediksi secara intuitif sebagai persentase, yang lebih mudah dimengerti dalam konteks bisnis.
 
 2. **Model Terbaik dari Cross-Validation**: 
-   Model terbaik sebelum penyetelan (tuning) adalah model Random Forest dengan MAPE sebesar **0.074**.
+   Model terbaik sebelum penyetelan (tuning) adalah model Random Forest dengan MAPE sebesar **7.401%**.
 
 3. **Model Terbaik setelah Penyetelan (Tuning)**: 
-   Setelah penyetelan, MAPE berhasil diturunkan menjadi **0.0695**, menunjukkan peningkatan performa sebesar 0.0045 atau 4.5%.
+   Setelah penyetelan, MAPE berhasil diturunkan menjadi **6.953%**, menunjukkan peningkatan performa sebesar 4.48%.
 
-4. **Kualitas Model (R-Squared)** :
-   Model mampu menjelaskan sekitar 96.52% variabilitas dalam harga mobil, menunjukkan kecocokan yang baik dalam menjelaskan hubungan antara fitur-fitur input dan harga mobil.
-
-5. **Parameter Terbaik untuk Model Random Forest**:
+4. **Parameter Terbaik untuk Model Random Forest**:
    - Jumlah Pohon (n_estimators): 76
    - Minimal Sampel untuk Split (min_samples_split): 8
    - Minimal Sampel di Setiap Leaf (min_samples_leaf): 1
@@ -155,14 +170,14 @@ Tahapan preprocessing yang dilakukan sebelum modeling
    - Kedalaman Maksimum Pohon (max_depth): 20
    - Penggunaan Bootstrap (bootstrap): False
 
-6. **Fitur yang Paling Berpengaruh** dalam Model Random Forest untuk Memprediksi Harga:
+5. **Fitur yang Paling Berpengaruh** dalam Model Random Forest untuk Memprediksi Harga:
    - Engine Size
    - Year
    - Mpg (Miles Per Gallon)
    - Transmission
    - Mileage
 
-7. **Error Residual**: 
+6. **Error Residual**: 
     Berikut adalah ringkasan insight mengenai distribusi residual pada harga prediksi:
 
     a. **Overestimate pada Rentang -40000 hingga -20000:**
@@ -175,33 +190,39 @@ Tahapan preprocessing yang dilakukan sebelum modeling
     - Prediksi underestimate pada rentang ini disebabkan oleh kurangnya data mobil pada rentang tersebut dalam data train. Akibatnya, ketika model digunakan untuk memprediksi karakteristik mobil yang sedikit berbeda pada data test, prediksi menjadi tidak akurat. Selain itu, harga aktual pada data test juga cenderung overpriced jika dibandingkan dengan harga pasaran yang ada dalam data train.
     - Harga actual pada data test *Overpriced* dibandingkan dengan harga pasaran pada data train, menyebabkan prediksi underestimate.
 
-8. **Performa Model Berdasarkan Rentang Harga**:
+7. **Performa Model Berdasarkan Rentang Harga**:
     - Rentang harga kendaraan mempengaruhi tingkat kesalahan prediksi (MAPE), dengan rentang harga di bawah 10.000 menunjukkan MAPE di atas rerata keseluruhan 6.95%, menandakan peningkatan error.
     - Rentang harga 80.000-90.000 menunjukkan MAPE sangat rendah, kurang dari 2%, menunjukkan prediksi yang sangat akurat.
     - Rentang harga 90.000-100.000 menunjukkan peningkatan error yang signifikan dengan MAPE di atas 11%, mengindikasikan prediksi yang kurang akurat.
     - Rentang harga 130.000-140.000 juga menunjukkan MAPE sangat rendah, di bawah 2%, menandakan prediksi yang sangat akurat.
 
-9. **Analisis Performa Model Berdasarkan Rentang Harga**:
+8. **Analisis Performa Model Berdasarkan Rentang Harga**:
     - Error terbesar disebabkan oleh Mercedes Benz S Class Engine Size 4.0 dan Year 2019 dengan error sebesar 26.18%. Model mempelajari cukup baik untuk karakteristik mobil serupa, namun harga yang diberikan pada data test jauh di atas rerata harga mobil serupa sehingga menyebabkan prediksi menjadi *underestimate*.
     - Prediksi untuk rentang harga 0-10.000 cenderung melebihi nilai aktual, karena kurangnya data kendaraan dengan tahun produksi sebelum 2011, yang membuat model sulit untuk menyesuaikan prediksi secara akurat.
     - Rentang harga 80.000-90.000 dan 130.000-140.000 menunjukkan performa prediksi yang sangat baik dengan error yang sangat kecil. Hal ini disebabkan persebaran data harga prediksi pada rentang tersebut sangat sedikit namun memiliki karakteristik yang serupa berdasarkan feature importance seperti `Engine Size`, `Year`, `Mpg`, dan `Transmission`.
 
-10. **Cost Benefit**:
-    - Hasil analisis ini dapat dimanfaatkan oleh perusahaan untuk mengurangi biaya dan meminimalkan upaya tenaga kerja yang diperlukan sebagai estimator harga mobil. Sebagai contoh, upah minimum pekerja di Inggris Raya adalah [£2013.44](https://id.tradingeconomics.com/united-kingdom/minimum-wages) per bulan, dengan asumsi bahwa mereka bekerja selama 8 jam setiap hari kerja. Dengan menggunakan model kami untuk memprediksi harga, kita tidak perlu menambah pekerjaan untuk melakukan estimasi harga dan dapat mengurangi biaya sebanyak £2013.44 per bulan.
-    - Untuk meningkatkan potensi margin keuntungan hingga 12%, perusahaan dapat menggunakan model prediksi harga mobil yang telah dikembangkan. Sebagai contoh, kami melakukan simulasi prediksi harga mobil dengan spesifikasi sebagai berikut:
+9. **Cost Benefit**:
 
-        - Merek: Audi
-        - Model: A1
-        - Tahun: 2019
-        - Transmisi: Semi-Auto
-        - Jarak Tempuh: 2500 mil
-        - Jenis Bahan Bakar: Petrol
-        - Pajak: £145
-        - Konsumsi BBM: 44.5 mpg
-        - Ukuran Mesin: 1.5
+    - **Tanpa Menggunakan Model :**<br>
+    Hasil analisis ini dapat dimanfaatkan oleh perusahaan untuk mengurangi biaya dan meminimalkan upaya tenaga kerja yang diperlukan sebagai estimator harga mobil. Sebagai contoh, upah minimum pekerja di Inggris Raya adalah [£2013.44](https://id.tradingeconomics.com/united-kingdom/minimum-wages) per bulan, dengan asumsi bahwa mereka bekerja selama 8 jam setiap hari kerja. Dengan menggunakan model kami untuk memprediksi harga, kita tidak perlu menambah pekerjaan untuk melakukan estimasi harga dan dapat mengurangi biaya sebanyak £2013.44 per bulan.
 
-      Prediksi harga pasaran untuk mobil ini adalah `£22,510.469`, yang masuk dalam rentang harga `£20,000 - £30,000` dengan error sebesar `6.33%`. Artinya, harga mobil sebenarnya diperkirakan berada di kisaran `£21,079.94 - £23,941.00.`Untuk memperoleh margin
-      keuntungan hingga `12%,` perusahaan harus mencari mobil dengan harga awal antara `£18,566.35 - £21,067.28`. Dengan menerapkan model ini, diharapkan perusahaan dapat meningkatkan margin keuntungan hingga yang optimal.
+
+    - **Menggunakan Model:**<br>
+    Dengan memanfaatkan model, perusahaan bisa memprediksi harga mobil tanpa biaya tambahan untuk tenaga kerja sebagai estimator harga mobil bekas. Estimasi harga mobil bekas dengan model ini memerlukan waktu singkat, berbeda dengan metode tradisional yang memakan waktu lama untuk memprediksi harga satu mobil.
+    
+        Perusahaan dapat menggunakan model prediksi harga mobil yang telah dikembangkan. Sebagai contoh, kami melakukakn simulasi prediksi harga mobil dengan spesifikasi sebagai berikut:  
+        
+            Merek: Audi
+            Model: A1
+            Tahun: 2019
+            Transmisi: Semi-Auto
+            Jarak Tempuh: 2500 mil
+            Jenis Bahan Bakar: Petrol
+            Pajak: £145
+            Konsumsi BBM: 44.5 mpg
+            Ukuran Mesin: 1.5
+
+        Prediksi harga pasaran untuk mobil ini adalah `£22,510.469`, yang masuk dalam rentang harga `£20,000 - £30,000` dengan error sebesar `6.33%`. Artinya, harga mobil sebenarnya diperkirakan berada di kisaran `£21,079.94 - £23,941.00.` Dengan menerapkan model ini, diharapkan perusahaan dapat meningkatkan efisiensi biaya perusahaan terutama biaya pekerja sebagai estimator harga mobil.
 
 ### **Recommendation**
 
