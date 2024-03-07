@@ -96,47 +96,6 @@ Tahapan preprocessing yang dilakukan sebelum modeling
 
 **Karakteristik Mobil Berdasarkan Segment Harga:**
 
-1. **Tahun Pembuatan:**
-    - Budget: Mobil pada kategori harga ini didominasi oleh mobil produksi tahun 2016 hingga 2017.
-    - Standard: Mobil pada kategori harga ini didominasi oleh mobil produksi tahun 2017 hingga 2019.
-    - Premium: Mobil pada kategori harga ini didominasi oleh mobil produksi tahun 2019.
-
-2. **Merek Kendaraan:**
-    - Budget: Mobil pada kategori harga ini didominasi oleh merek Vauxhall dan Ford, menawarkan mobil yang ekonomis.
-    - Standard: Mobil pada kategori harga ini didominasi oleh merek Ford, Volkswagen, dan Vauxhall.
-    - Premium: Mobil pada kategori harga ini didominasi oleh merek Mercedes Benz, BMW, dan Audi, menawarkan teknologi canggih, desain mewah, dan performa mesin tinggi.
-
-3. **Model Kendaraan:**
-    - Budget: Cocok untuk konsumen yang menginginkan kendaraan dengan tipe bentuk mini hingga small dengan gaya hatchback yang cocok digunakan di perkotaan.
-    - Standard: Memiliki variasi yang lebih beragam, cocok untuk kebutuhan konsumen yang lebih bervariasi.
-    - Premium: Cocok untuk konsumen yang menginginkan kendaraan dengan teknologi canggih, desain mewah, dan performa mesin tinggi, menawarkan tipe bentuk large hingga executive.
-
-4. **Transmisi:**
-    - Budget: Lebih cocok untuk konsumen yang terbiasa dengan transmisi manual, menawarkan harga terjangkau dan kontrol penuh terhadap kinerja mesin.
-    - Standard: Menawarkan lebih banyak variasi, mencakup baik transmisi manual maupun otomatis, untuk memenuhi preferensi konsumen yang beragam.
-    - Premium: Lebih cocok untuk konsumen yang tidak terbiasa dengan transmisi manual, namun ingin memiliki kontrol ekstra terhadap mesin dengan kenyamanan dari transmisi otomatis atau semi-auto.
-
-5. **Bahan Bakar:**
-    - Budget: Mayoritas menggunakan bahan bakar petrol, menawarkan harga terjangkau dan biaya perawatan yang ekonomis.
-    - Standard: Lebih banyak variasi termasuk petrol dan diesel, memenuhi kebutuhan konsumen yang beragam.
-    - Premium: Mayoritas menggunakan bahan bakar diesel, cocok untuk konsumen yang menginginkan performa tinggi dari mesin.
-
-6. **Tenaga Mesin:**
-    - Budget: Cocok untuk konsumen yang menginginkan mobil dengan mesin bertenaga kecil hingga menengah, menawarkan efisiensi bahan bakar yang lebih baik.
-    - Standard: Memiliki variasi mesin yang lebih luas, dari kecil hingga besar, untuk memenuhi kebutuhan konsumen yang beragam.
-    - Premium: Cocok untuk konsumen yang mengutamakan performa mesin tinggi, dengan mesin menengah hingga besar.
-
-7. **Efisiensi Bahan Bakar:**
-    - Budget: Mayoritas kendaraan menawarkan efisiensi bahan bakar baik, cocok untuk konsumen yang mencari kendaraan dengan efisiensi tinggi.
-    - Standard: Memberikan efisiensi bahan bakar baik hingga cukup baik, menawarkan berbagai pilihan untuk konsumen.
-    - Premium: Menawarkan efisiensi bahan bakar yang lebih rendah, fokus pada performa dan kemewahan.
-
-## **Conclussion and Recommendation**
-
-### **Conclusion**
-
-**Karakteristik Mobil Berdasarkan Segment Harga:**
-
 1. **Kategori Budget**: 
     Kategori Budget mencakup mobil produksi lama (4 tahun) yang berukuran kecil, memiliki mesin bertenaga kecil hingga menengah, bertransmisi manual, dan memiliki efisiensi bahan bakar yang sangat baik, membuat kendaraan pada kategori ini sangat cocok untuk kebutuhan transportasi perkotaan.
 
