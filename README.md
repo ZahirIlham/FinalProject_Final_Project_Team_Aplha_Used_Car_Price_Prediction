@@ -1,4 +1,4 @@
-# **Business Analytics: Predicting Used Car Price in UK**
+# **Predicting Used Car Price in UK**
 Created By : Rafidghadah Damarta dan Zahir Ilham
 
 ## **Business Problem Understanding**
