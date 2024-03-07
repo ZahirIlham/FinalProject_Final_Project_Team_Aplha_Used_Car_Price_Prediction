@@ -163,11 +163,11 @@ Dengan karakteristik tersebut, stakeholder mendapatkan gambaran mengenai mobil b
 9. **Cost Benefit**:
 
     - **Tanpa Menggunakan Model :**<br>
-    Hasil analisis ini dapat dimanfaatkan oleh perusahaan untuk mengurangi biaya dan meminimalkan upaya tenaga kerja yang diperlukan sebagai estimator harga mobil. Sebagai contoh, upah minimum pekerja di Inggris Raya adalah [£2013.44](https://id.tradingeconomics.com/united-kingdom/minimum-wages) per bulan, dengan asumsi bahwa mereka bekerja selama 8 jam setiap hari kerja. Dengan menggunakan model kami untuk memprediksi harga, kita tidak perlu menambah pekerjaan untuk melakukan estimasi harga dan dapat mengurangi biaya sebanyak £2013.44 per bulan.
-
-
+        -   Untuk mendapatkan estimasi harga tanpa menggunakan model, penjual harus menunggu tim Webuy Used Cars untuk memeriksa informasi yang sudah diisi terkait mobil yang dijual. Hal ini akan memakan banyak waktu dan menambah tenaga kerja
+        -   Sebagai contoh, upah minimum pekerja di Inggris Raya adalah [£2013.44](https://id.tradingeconomics.com/united-kingdom/minimum-wages) per bulan, dengan asumsi bahwa mereka bekerja selama 8 jam setiap hari kerja. Tanpa menggunakan model kita perlu mengeluarkan tambahan biaya setidaknya £2013.44 (dengan asumsi pekerja mau dibiayar dengan upah minimum) per bulan untuk satu tenaga kerja yang bertugas mencari tahu estimasi harga mobil bekas yang akan dijual.
+    
     - **Menggunakan Model:**<br>
-    Dengan memanfaatkan model, perusahaan bisa memprediksi harga mobil tanpa biaya tambahan untuk tenaga kerja sebagai estimator harga mobil bekas. Estimasi harga mobil bekas dengan model ini memerlukan waktu singkat, berbeda dengan metode tradisional yang memakan waktu lama untuk memprediksi harga satu mobil.
+    Dengan memanfaatkan model, perusahaan bisa memprediksi harga mobil tanpa biaya tambahan untuk tenaga kerja sebagai estimator harga mobil bekas. Estimasi harga mobil bekas dengan model ini memerlukan waktu singkat, berbeda dengan metode konvensional yang memakan waktu lama untuk memprediksi harga satu mobil.
     
         Perusahaan dapat menggunakan model prediksi harga mobil yang telah dikembangkan. Sebagai contoh, kami melakukakn simulasi prediksi harga mobil dengan spesifikasi sebagai berikut:  
         
@@ -181,7 +181,7 @@ Dengan karakteristik tersebut, stakeholder mendapatkan gambaran mengenai mobil b
             Konsumsi BBM: 44.5 mpg
             Ukuran Mesin: 1.5
 
-        Prediksi harga pasaran untuk mobil ini adalah `£22,510.469`, yang masuk dalam rentang harga `£20,000 - £30,000` dengan error sebesar `6.33%`. Artinya, harga mobil sebenarnya diperkirakan berada di kisaran `£21,079.94 - £23,941.00.` Dengan menerapkan model ini, diharapkan perusahaan dapat meningkatkan efisiensi biaya perusahaan terutama biaya pekerja sebagai estimator harga mobil.
+        Prediksi harga pasaran untuk mobil ini adalah `£22,510.469`, yang masuk dalam rentang harga `£20,000 - £30,000` dengan error sebesar `6.33%`. Artinya, harga mobil sebenarnya diperkirakan berada di kisaran `£21,079.94 - £23,941.00.` Prediksi tersebut dapat kita ketahui dalam waktu sekitar 1 detik. Dengan menerapkan model ini, diharapkan perusahaan dapat meningkatkan efisiensi biaya perusahaan terutama biaya pekerja sebagai estimator harga mobil.
 
 ### **Recommendation**
 
