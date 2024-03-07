@@ -36,8 +36,8 @@ Selain karakteristik mobil, penentuan harga juga menjadi penting. Jika perusahaa
     - Pendekatan analitis dimulai dengan Exploratory Data Analysis (EDA) menyeluruh untuk mendapatkan pemahaman mendalam tentang dataset. Selain itu, penjelasan rinci tentang teknik regresi itu sendiri. Pemodelan juga akan melibatkan validasi silang dan penyesuaian hiperparameter untuk memastikan kekokohan dan generalisasi model.
 
 - Kapan dan bagaimana stakeholder akan memanfaatkan atau menggunakan solusi tersebut?
-  - Wawasan yang diperoleh dari analisis ini dapat membantu tim riset dan pengembangan Webuy Used Cars dalam membuat keputusan berbasis data, memfasilitasi transaksi yang lebih terinformasi di pasar mobil bekas Inggris Raya.
-  - Penjual mobil mendapatkan kemudahan untuk menentukan harga mobil bekas yang sesuai dengan harga pasar mobil bekas di Inggris Raya Jika menggunakan jasa Webuyusedcar.
+  - Wawasan yang diperoleh dari analisis ini dapat membantu tim riset dan pengembangan Webuy Used Cars dalam membuat keputusan berbasis data, serta mengetahui gambaran mengenai pasar mobil bekas di Inggris Raya berdasarkan karakteristik mobil dari data yang ada.
+  - Penjual mobil mendapatkan kemudahan untuk menentukan harga mobil bekas yang sesuai dengan harga pasar mobil bekas di Inggris Raya Jika menggunakan jasa We Buy Used Cars.
  
 ### **Metric Evaluation**
 
